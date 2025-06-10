@@ -1,4 +1,4 @@
-import pytest
+import pytest # type: ignore
 from app.operations import addition, subtraction, multiplication, division
 
 def test_addition():

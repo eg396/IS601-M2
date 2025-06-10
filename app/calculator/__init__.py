@@ -34,6 +34,9 @@ def calculator():
             except ValueError as e:
                 print(e) 
                 continue 
+            except ZeroDivisionError:
+                print("Cannot divide by zero")
+                continue
         else:
             print(f"Unknown operation '{operation}'. Supported operations: add, subtract, multiply, divide.")
             continue  

@@ -31,9 +31,9 @@ def calculator():
         elif operation == "divide":
             try:
                 result = division(num1, num2) 
-            except ValueError as e:
-                print(e) 
-                continue 
+            ## except ValueError as e:            ## This was added into the professor's version but, when am I gonna raise this??
+            ##     print(e)                       ## At least to my knowledge this is covered already by other exceptions
+            ##     continue 
             except ZeroDivisionError:
                 print("Cannot divide by zero")
                 continue
